@@ -48,6 +48,7 @@ class LoginDao {
       'avatar': avatar,
       'imoocId': imoocId
     };
+    HiCache.getInstance().setString(kUserInfo, jsonEncode(map));
   }
 
   ///获取当前登录用户信息
